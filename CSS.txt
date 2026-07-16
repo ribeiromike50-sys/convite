@@ -1,0 +1,64 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+  text-align: center;
+  padding: 40px;
+  overflow: hidden;
+}
+h1 {
+  color: #fff;
+  text-shadow: 2px 2px #ff6f61;
+}
+button {
+  padding: 12px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ff6f61;
+  color: white;
+  transition: transform 0.2s, background 0.3s;
+}
+button:hover {
+  transform: scale(1.1);
+  background: #ffcc00;
+  color: black;
+}
+#mensagem {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #333;
+  font-weight: bold;
+}
+.caixa {
+  width: 120px;
+  height: 120px;
+  background: pink;
+  margin: 20px auto;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.heart {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: red;
+  transform: rotate(45deg);
+  animation: float 6s infinite;
+}
+.heart::before,
+.heart::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: red;
+  border-radius: 50%;
+}
+.heart::before { top: -15px; left: 0; }
+.heart::after { left: 15px; top: 0; }
+@keyframes float {
+  0% { transform: translateY(0) rotate(45deg); opacity: 1; }
+  100% { transform: translateY(-600px) rotate(45deg); opacity: 0; }
+}

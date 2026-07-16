@@ -1,0 +1,25 @@
+function mostrarMensagem() {
+  document.getElementById("mensagem").innerText = "Você aceitou! 💖 Mal posso esperar!";
+  criarCoracoes();
+}
+function mudarCor() {
+  const caixa = document.getElementById("caixa");
+  caixa.style.background = caixa.style.background === "pink" ? "red" : "pink";
+}
+function moverCaixa() {
+  const caixa = document.getElementById("caixa");
+  caixa.style.transform = caixa.style.transform === "translateX(200px)" ? "translateX(0)" : "translateX(200px)";
+}
+function surpresa() {
+  alert("Surpresa! 🌟 Você é muito especial para mim!");
+}
+function criarCoracoes() {
+  for (let i = 0; i < 10; i++) {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.style.left = Math.random() * window.innerWidth + "px";
+    heart.style.top = window.innerHeight + "px";
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 6000);
+  }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Convite Especial 💖</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>🌹 Convite para um Date 🌹</h1>
+  <p>Quero te convidar para um encontro especial. Que tal aceitar?</p>
+
+  <!-- Player de música via YouTube -->
+  <iframe width="300" height="180" src="https://www.youtube.com/embed/te8tOyon9e4?autoplay=0" 
+    title="Bruna Karla - Que Bom Que Você Chegou" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+  </iframe>
+
+  <!-- Botões interativos -->
+  <button onclick="mostrarMensagem()">Aceitar o convite 💕</button>
+  <button onclick="mudarCor()">Mudar cor do coração</button>
+  <button onclick="moverCaixa()">Mover coração</button>
+  <button onclick="surpresa()">Surpresa ✨</button>
+
+  <div id="mensagem"></div>
+  <div class="caixa" id="caixa"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
